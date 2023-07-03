@@ -1,0 +1,21 @@
+{
+  "name": "blood-donation",
+  "version": "1.0.0",
+  "description": "An application to donate and receive blood",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ./ blood-donation --overwrite",
+    "package": "electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "com.dbs.blood-donation"
+  },
+  "author": "Krithick, Ashwath and Adish Sood",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^20.0.1",
+    "electron-builder": "^23.6.0",
+    "electron-packager": "^15.5.1"
+  }
+}

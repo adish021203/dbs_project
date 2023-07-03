@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <link href="../css/home.css" rel="stylesheet">    
+    <title>Blood Donation</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+          <section class="wrapper">
+              <div class="heading">
+                  <!--<div class="striped">
+                      <span class="striped-line"></span>
+                  </div>           -->         
+              </div>
+              <center><div id="stopwatch" class="text text-large timer-text mb-4">Welcome user</div></center>
+              <div class="clockButtons">
+                <button id="user_registration" onclick="window.electron.register()">User Registration</button> 
+                <button id="donate" onclick="window.electron.donate()">Donate Blood</button>
+                <button id="receive" onclick="window.electron.receive()">Receive Blood</button>
+                <button id="inventory" onclick="window.electron.inventory()">Blood Inventory</button>
+                <button id="history" onclick="window.electron.history()">Track Donor History</button>
+                <button id="feedback" onclick="window.electron.feedback()">Feedback</button>
+              </div>
+          </section>
+      </div>
+    </main>      
+  </body>
+</html>
